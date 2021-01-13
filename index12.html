@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation</title>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .road1
+        {
+            position: absolute;
+            top: 65%;
+            left: -5139px;
+            animation: road1 5s infinite linear reverse;
+        }
+        .road2
+        {
+            position: absolute;
+            top: 65%;
+            left: 0;
+            animation: road2 5s infinite linear reverse;
+            animation-iteration-count: infinite;
+        }
+        .city1
+        {
+            position: absolute;
+            top: 28%;
+            left: -100%;
+            width: 100%;
+            animation: city1 5s infinite linear reverse;
+        }
+        .city2
+        {
+            position: absolute;
+            top: 28%;
+            left: 0;
+            width: 100%;
+            animation: city2 5s infinite linear reverse;
+        }
+
+        .car
+        {
+            position: absolute;
+            top: 54%;
+            width: 30%;
+            left: 25%;
+        }
+        .wheel1
+        {
+            position: absolute;
+            top: 68%;
+            left: 27.5%;
+            width: 5%;
+            animation: wheel 1s infinite linear;
+        }
+        .wheel2
+        {
+            position: absolute;
+            top: 68%;
+            left: 46.5%;
+            width: 5%;
+            animation: wheel 1s infinite linear;
+        }
+        @keyframes road1
+        {
+            from
+            {
+                left: -5139px;
+            }
+            to
+            {
+                left: 0;
+            }
+        }
+        @keyframes road2
+        {
+            from
+            {
+                left: 0;
+            }
+            to
+            {
+                left: 5139px;
+            }
+        }
+        @keyframes city1
+        {
+            from
+            {
+                left: -100%;
+            }
+            to
+            {
+                left: 0;
+            }
+        }
+        @keyframes city2
+        {
+            from
+            {
+                left: 0;
+            }
+            to
+            {
+                left: 100%;
+            }
+        }
+        @keyframes wheel
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<img src="assests/img/sky.jpg" class="sky">
+<img src="assests/img/road.jpg" class="road1">
+<img src="assests/img/road.jpg" class="road2">
+<img src="assests/img/city.png" class="city1">
+<img src="assests/img/city.png" class="city2">
+<img src="assests/img/car.png" class="car">
+<img src="assests/img/wheel.png" class="wheel1">
+<img src="assests/img/wheel.png" class="wheel2">
+
+</body>
+</html>
